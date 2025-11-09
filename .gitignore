@@ -1,0 +1,8 @@
+# Personal campaign files (optional - users can remove if they want to track campaigns)
+campaigns/*/
+!campaigns/.gitkeep
+
+# Temporary files
+*.tmp
+*~
+.DS_Store
