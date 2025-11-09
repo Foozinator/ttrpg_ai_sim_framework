@@ -77,10 +77,10 @@ The framework uses clear prefixes to distinguish between player meta-talk and in
 
 | Type | Format | Example |
 |------|--------|---------|
-| Player Meta | `> [PlayerName] "dialogue"` | > [Sarah] "Should we rest first?" |
-| Character Speech | `CharName: "dialogue"` | Kira: "I don't trust them." |
-| Character Action | `*action in italics*` | *Thorgrim readies his axe.* |
-| Dice Roll | `> [PlayerName] "Roll details"` | > [Dev] "Attack: d20(15) + 7 = 22" |
+| Player Meta | > [PlayerName] "dialogue" | > [Sarah] "Should we rest first?" |
+| Character Speech | CharName: "dialogue" | Kira: "I don't trust them." |
+| Character Action | *action in italics* | *Thorgrim readies his axe.* |
+| Dice Roll | > [PlayerName] "Roll details" | > [Dev] "Attack: d20(15) + 7 = 22" |
 
 ## Session Flow
 
@@ -183,7 +183,7 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 
 **Commercial Use:** If you're a company or individual wanting to monetize content based on this framework (paid products, services, content, etc.), please contact the author to discuss licensing terms.
 
-**Contact for Commercial Licensing:** [GitHub: Foozinator](https://github.com/Foozinator)
+**Contact for Commercial Licensing:** [Your contact information - email, GitHub profile, etc.]
 
 **Small-scale sharing** (like blog posts, YouTube videos, or community content discussing/using the framework) is fine as long as you're not directly monetizing the framework itself.
 
@@ -210,7 +210,6 @@ Framework developed for AI-assisted TTRPG play. Designed to work with:
 ### Core Framework Documents
 - **Primary Framework**: [`framework/AI_TTRPG_Player_Framework.md`](framework/AI_TTRPG_Player_Framework.md) - Read this first and in full
 - **Game System**: `game-systems/[system-name]/` - Load relevant system rules
-  - If the requested system is not in this folder, generate a working draft for the GM to review.
 - **Campaign Info**: `campaigns/[campaign-name]/campaign_info.md` - Context for ongoing campaigns
 
 ### Key Behavioral Guidelines
@@ -221,10 +220,13 @@ Framework developed for AI-assisted TTRPG play. Designed to work with:
 - **Session Summaries**: Generate after each session in the GM's preferred style
 
 ### File Management
-- Character sheets: `campaigns/[campaign-name]/characters/[character_name].md`
-- Player profiles: `campaigns/[campaign-name]/players/player_profiles.md`
-- Session summaries: `campaigns/[campaign-name]/session_summaries/session_[XX]_summary.md`
-- Update files after each session
+The agent manages files in `/mnt/user-data/outputs/` and provides download links at session breaks. For detailed workflow, see the [File Management section in the framework](framework/AI_TTRPG_Player_Framework.md#file-management-and-version-control).
+
+**Key points:**
+- Files are previewed before creation
+- Download links provided at session breaks
+- GM commits to version control at their convenience
+- Cannot email files - must download via links
 
 ### Safety Reminder
 Players should NOT be perfect. Include realistic imperfections to prevent unhealthy GM attachment. This is a game, not a substitute for human relationships.
