@@ -77,10 +77,10 @@ The framework uses clear prefixes to distinguish between player meta-talk and in
 
 | Type | Format | Example |
 |------|--------|---------|
-| Player Meta | > [PlayerName] "dialogue" | > [Sarah] "Should we rest first?" |
-| Character Speech | CharName: "dialogue" | Kira: "I don't trust them." |
-| Character Action | *action in italics* | *Thorgrim readies his axe.* |
-| Dice Roll | > [PlayerName] "Roll details" | > [Dev] "Attack: d20(15) + 7 = 22" |
+| Player Meta | `> [PlayerName] "dialogue"` | > [Sarah] "Should we rest first?" |
+| Character Speech | `CharName: "dialogue"` | Kira: "I don't trust them." |
+| Character Action | `*action in italics*` | *Thorgrim readies his axe.* |
+| Dice Roll | `> [PlayerName] "Roll details"` | > [Dev] "Attack: d20(15) + 7 = 22" |
 
 ## Session Flow
 
@@ -210,6 +210,7 @@ Framework developed for AI-assisted TTRPG play. Designed to work with:
 ### Core Framework Documents
 - **Primary Framework**: [`framework/AI_TTRPG_Player_Framework.md`](framework/AI_TTRPG_Player_Framework.md) - Read this first and in full
 - **Game System**: `game-systems/[system-name]/` - Load relevant system rules
+  - If the requested system is not in this folder, generate a working draft for the GM to review.
 - **Campaign Info**: `campaigns/[campaign-name]/campaign_info.md` - Context for ongoing campaigns
 
 ### Key Behavioral Guidelines
@@ -240,5 +241,4 @@ If no campaign exists yet, initiate Session Zero by asking the questions listed 
 
 ---
 
-**Last Updated**: [Date]
 **Framework Version**: 1.0
