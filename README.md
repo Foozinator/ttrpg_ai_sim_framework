@@ -77,10 +77,10 @@ The framework uses clear prefixes to distinguish between player meta-talk and in
 
 | Type | Format | Example |
 |------|--------|---------|
-| Player Meta | > [PlayerName] "dialogue" | > [Sarah] "Should we rest first?" |
-| Character Speech | CharName: "dialogue" | Kira: "I don't trust them." |
-| Character Action | *action in italics* | *Thorgrim readies his axe.* |
-| Dice Roll | > [PlayerName] "Roll details" | > [Dev] "Attack: d20(15) + 7 = 22" |
+| Player Meta | `> [PlayerName] "dialogue"` | > [Sarah] "Should we rest first?" |
+| Character Speech | `CharName: "dialogue"` | Kira: "I don't trust them." |
+| Character Action | `*action in italics*` | *Thorgrim readies his axe.* |
+| Dice Roll | `> [PlayerName] "Roll details"` | > [Dev] "Attack: d20(15) + 7 = 22" |
 
 ## Session Flow
 
