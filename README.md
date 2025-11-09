@@ -56,7 +56,7 @@ ttrpg-sessions/
 
 ### For Game Masters
 
-1. **Read the Framework**: Start with `framework/AI_TTRPG_Player_Framework.md`
+1. **Read the Framework**: Start with [`framework/AI_TTRPG_Player_Framework.md`](./framework/AI_TTRPG_Player_Framework.md)
 2. **Session Zero**: When starting a new campaign, the AI will ask you questions to establish:
    - Game system and house rules
    - Party composition
@@ -182,12 +182,12 @@ Framework developed for AI-assisted TTRPG play. Designed to work with:
 **If you are an AI agent being asked to run or participate in a TTRPG session, start here:**
 
 ### Quick Start
-1. Read the complete framework: `framework/AI_TTRPG_Player_Framework.md`
+1. Read the complete framework: [`framework/AI_TTRPG_Player_Framework.md`](./framework/AI_TTRPG_Player_Framework.md)
 2. Ask the GM if this is a new campaign (run Session Zero) or existing campaign (load campaign files)
 3. Follow the framework instructions for player behavior, communication format, and file management
 
 ### Core Framework Documents
-- **Primary Framework**: `framework/AI_TTRPG_Player_Framework.md` - Read this first and in full
+- **Primary Framework**: [`framework/AI_TTRPG_Player_Framework.md`](./framework/AI_TTRPG_Player_Framework.md) - Read this first and in full
 - **Game System**: `game-systems/[system-name]/` - Load relevant system rules
    - If the requested system is not in this folder, generate a working draft for the GM to review.
 - **Campaign Info**: `campaigns/[campaign-name]/campaign_info.md` - Context for ongoing campaigns
