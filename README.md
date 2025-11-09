@@ -1,5 +1,3 @@
-# ttrpg_ai_sim_framework
-
 # AI-Assisted TTRPG Sessions
 
 A framework and file structure for running tabletop roleplaying game sessions with AI agents acting as players alongside (or instead of) human players.
@@ -56,7 +54,7 @@ ttrpg-sessions/
 
 ### For Game Masters
 
-1. **Read the Framework**: Start with [`framework/AI_TTRPG_Player_Framework.md`](./framework/AI_TTRPG_Player_Framework.md)
+1. **Read the Framework**: Start with [`framework/AI_TTRPG_Player_Framework.md`](framework/AI_TTRPG_Player_Framework.md)
 2. **Session Zero**: When starting a new campaign, the AI will ask you questions to establish:
    - Game system and house rules
    - Party composition
@@ -79,10 +77,10 @@ The framework uses clear prefixes to distinguish between player meta-talk and in
 
 | Type | Format | Example |
 |------|--------|---------|
-| Player Meta | `> [PlayerName] "dialogue"` | > [Sarah] "Should we rest first?" |
-| Character Speech | `CharName: "dialogue"` | Kira: "I don't trust them." |
-| Character Action | `*action in italics*` | *Thorgrim readies his axe.* |
-| Dice Roll | `> [PlayerName] "Roll details"` | > [Dev] "Attack: d20(15) + 7 = 22" |
+| Player Meta | > [PlayerName] "dialogue" | > [Sarah] "Should we rest first?" |
+| Character Speech | CharName: "dialogue" | Kira: "I don't trust them." |
+| Character Action | *action in italics* | *Thorgrim readies his axe.* |
+| Dice Roll | > [PlayerName] "Roll details" | > [Dev] "Attack: d20(15) + 7 = 22" |
 
 ## Session Flow
 
@@ -118,16 +116,22 @@ Run full campaigns with AI players to:
 
 ## Game Systems
 
-The framework is system-agnostic, but you'll want to create a Game System File for your chosen system. Templates are provided for:
+The framework is system-agnostic. When you start a campaign with a specific game system, the AI agent will generate a Game System File for that system on-demand. These files can then be refined and customized for your table.
+
+Common systems the AI can generate files for:
 - Pathfinder 2e
 - D&D 5e
-- [Add your own!]
+- Call of Cthulhu
+- Powered by the Apocalypse games
+- Any other TTRPG system
 
 System files contain:
 - Core mechanics reference
 - Character creation guidelines
 - Combat rules
 - House rules specific to your table
+
+**Note:** The `game-systems/` folder may be empty initially. The AI will populate it as you run campaigns with different systems.
 
 ## Customization
 
@@ -166,7 +170,24 @@ This repository is designed to work well with version control systems like Git:
 
 ## License
 
-CC BY-NC-SA 4.0 (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International)
+**CC BY-NC-SA 4.0** (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International)
+
+This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
+**What this means:**
+- ✅ **Free for personal use** - Use this framework for your home games
+- ✅ **Free for educational use** - Teachers and students can use it
+- ✅ **Share and adapt** - Modify and build upon this work
+- ✅ **Attribution required** - Give appropriate credit
+- ❌ **No commercial use without permission** - Contact for commercial licensing
+
+**Commercial Use:** If you're a company or individual wanting to monetize content based on this framework (paid products, services, content, etc.), please contact the author to discuss licensing terms.
+
+**Contact for Commercial Licensing:** [GitHub: Foozinator](https://github.com/Foozinator)
+
+**Small-scale sharing** (like blog posts, YouTube videos, or community content discussing/using the framework) is fine as long as you're not directly monetizing the framework itself.
+
+For full license text: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ## Credits
 
@@ -182,14 +203,13 @@ Framework developed for AI-assisted TTRPG play. Designed to work with:
 **If you are an AI agent being asked to run or participate in a TTRPG session, start here:**
 
 ### Quick Start
-1. Read the complete framework: [`framework/AI_TTRPG_Player_Framework.md`](./framework/AI_TTRPG_Player_Framework.md)
+1. Read the complete framework: [`framework/AI_TTRPG_Player_Framework.md`](framework/AI_TTRPG_Player_Framework.md)
 2. Ask the GM if this is a new campaign (run Session Zero) or existing campaign (load campaign files)
 3. Follow the framework instructions for player behavior, communication format, and file management
 
 ### Core Framework Documents
-- **Primary Framework**: [`framework/AI_TTRPG_Player_Framework.md`](./framework/AI_TTRPG_Player_Framework.md) - Read this first and in full
+- **Primary Framework**: [`framework/AI_TTRPG_Player_Framework.md`](framework/AI_TTRPG_Player_Framework.md) - Read this first and in full
 - **Game System**: `game-systems/[system-name]/` - Load relevant system rules
-   - If the requested system is not in this folder, generate a working draft for the GM to review.
 - **Campaign Info**: `campaigns/[campaign-name]/campaign_info.md` - Context for ongoing campaigns
 
 ### Key Behavioral Guidelines
@@ -220,4 +240,5 @@ If no campaign exists yet, initiate Session Zero by asking the questions listed 
 
 ---
 
+**Last Updated**: [Date]
 **Framework Version**: 1.0
