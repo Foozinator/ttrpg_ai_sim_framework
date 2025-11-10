@@ -32,6 +32,7 @@ While examples may reference specific systems, the framework should adapt to any
 ttrpg-sessions/
 ├── framework/
 │   ├── AI_TTRPG_Player_Framework.md (this document)
+│   ├── Session_Refresher.md
 │   └── [other framework documents]
 ├── game-systems/
 │   ├── pathfinder2e/
@@ -356,7 +357,26 @@ The agent should acknowledge and adjust behavior without breaking immersion:
 
 After each session, the agent should create a session summary based on the GM's preferences established in Session Zero.
 
-### Summary Template
+### Context Window Drift Prevention
+
+**IMPORTANT:** As conversations grow longer, AI agents can drift from their original instructions and revert to more common patterns (narrative storytelling, GM-like behavior). To prevent this:
+
+1. **Session Refresher Document** - At the start of EVERY session (including mid-session if drift is detected), the agent should review the Session Refresher document: `framework/Session_Refresher.md`
+
+2. **Drift Warning Signs:**
+   - Making NPC dice rolls or describing NPC reactions
+   - Asking GM to roll for player characters
+   - Writing in narrative/story mode instead of player dialogue
+   - Not making dice rolls for own characters
+   - Describing scene outcomes instead of declaring character actions
+
+3. **Reset Protocol:** If drift is detected, the GM can say:
+   ```
+   [To the agent: Return to player mode]
+   ```
+   The agent should immediately stop, re-read the Session Refresher, and return to proper player behavior.
+
+### Session Summary Template
 
 #### Filename Convention
 `session_[number]_summary.md` (e.g., `session_01_summary.md`)
